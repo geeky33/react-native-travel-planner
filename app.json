@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "TravelMate",
+    "slug": "travelmate-rn",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "TravelMate uses your location to show where you are on the trip map."
+      }
+    },
+    "android": {
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "TravelMate uses your location to show where you are on the trip map."
+        }
+      ],
+      "expo-status-bar",
+      "expo-font"
+    ]
+  }
+}
